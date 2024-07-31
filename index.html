@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <!-- Animated background spans -->
+        <span></span>
+        <span></span>
+        <span></span>
+        <!-- Add more spans as needed -->
+
+        <div class="signin">
+            <div class="content">
+                <h2>Currency Converter</h2>
+                <div class="form">
+                    <div class="inputBox">
+                        <input id="amount" type="number" placeholder="Enter amount" step="0.01">
+                        <i>Amount</i>
+                    </div>
+                    <div class="inputBox">
+                        <select id="fromCurrency">
+                            <option value="USD">USD</option>
+                        </select>
+                    </div>
+                    <div class="inputBox">
+                        <select id="toCurrency">
+                            <option value="PHP">PHP</option>
+                        </select>
+                    </div>
+                    <div class="inputBox">
+                        <input type="button" value="Convert" onclick="convertCurrency()">
+                    </div>
+                    <p id="result"></p>
+                    <p id="error"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
